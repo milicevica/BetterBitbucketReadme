@@ -5,11 +5,11 @@
   "manifest_version": 3,
   "icons": {},
   "content_scripts": [{
-    "matches": [],
-    "js": []
+    "matches": ["https://bitbucket.org/*"],
+    "js": ["content/content.js"]
   }],
   "action": {
-    "default_popup": ""
+    "default_popup": "popup/popup.html"
   },
   "permissions": ["storage", "scripting"],
   "host_permissions": ["https://bitbucket.org/*"],
