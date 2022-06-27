@@ -1,4 +1,4 @@
-import ContentPlugin from "../../lib/ContentPlugin";
+import ContentPlugin from "../../lib/ContentPlugin.js";
 
 class BeautifyBitbucketReadmePlugin extends ContentPlugin {
     constructor() {

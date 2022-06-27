@@ -1,4 +1,4 @@
-import BeautifyBitbucketReadmePlugin from "./BeautifyBitbucketReadme/BeautifyBitbucketReadmePlugin";
+import BeautifyBitbucketReadmePlugin from "./BeautifyBitbucketReadme/BeautifyBitbucketReadmePlugin.js";
 
 export default [
     new BeautifyBitbucketReadmePlugin()
