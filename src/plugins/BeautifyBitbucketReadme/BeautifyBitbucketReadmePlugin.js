@@ -10,11 +10,11 @@ class BeautifyBitbucketReadmePlugin extends ContentPlugin {
     run() {
         console.log("Running BeautifyBitbucketReadmePlugin...");
 
-        this.injectScripts("/plugins/BeautifyBitbucketReadme/beautify.js");
-        this.injectScripts("/lib/markdown-it.min.js");
+        this.injectScript("/plugins/BeautifyBitbucketReadme/beautify.js");
+        this.injectScript("/lib/markdown-it.min.js");
     }
 
-    injectScripts(script) {
+    injectScript(script) {
         let scriptElement = document.createElement("script");
 
         scriptElement.src = chrome.runtime.getURL(script);
@@ -25,6 +25,8 @@ class BeautifyBitbucketReadmePlugin extends ContentPlugin {
             scriptElement.parentNode.removeChild(scriptElement);
         }
     }
+
+    in
 }
 
 export default BeautifyBitbucketReadmePlugin;
