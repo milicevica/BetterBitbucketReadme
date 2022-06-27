@@ -35,8 +35,6 @@ class BeautifyBitbucketReadmePlugin extends ContentPlugin {
         linkElement.type = "text/css";
         linkElement.href = chrome.runtime.getURL(style);
 
-        console.log("Link element: ", linkElement);
-
         (document.head || document.documentElement).appendChild(linkElement);
     }
 }
