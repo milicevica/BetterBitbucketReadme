@@ -12,6 +12,8 @@ class BeautifyBitbucketReadmePlugin extends ContentPlugin {
 
         this.injectScript("/plugins/BeautifyBitbucketReadme/beautify.js");
         this.injectScript("/lib/markdown-it.min.js");
+
+        this.injectStyle("/plugins/BeautifyBitbucketReadme/beautify.css");
     }
 
     injectScript(script) {
@@ -26,7 +28,17 @@ class BeautifyBitbucketReadmePlugin extends ContentPlugin {
         }
     }
 
-    in
+    injectStyle(style) {
+        let linkElement = document.createElement("link");
+
+        linkElement.rel = "stylesheet";
+        linkElement.type = "text/css";
+        linkElement.href = chrome.runtime.getURL(style);
+
+        console.log("Link element: ", linkElement);
+
+        (document.head || document.documentElement).appendChild(linkElement);
+    }
 }
 
 export default BeautifyBitbucketReadmePlugin;

@@ -16,14 +16,20 @@ function beautify() {
 
 function createBeautifyButtonElement() {
     let button = document.createElement("button");
+    let span = document.createElement("span");
 
-    button.appendChild(document.createTextNode("Beautify!"));
+    span.id = "beautifyBitbucketReadmeBtnTxt";
+
+    span.appendChild(document.createTextNode("Beautify"));
+
+    button.appendChild(span);
 
     button.id = "beautifyBitbucketReadmeBtn";
 
-    button.style.cssText += "position: absolute; top: 0; right: 0;";
-
-    button.addEventListener("click", handleBeautify);
+    button.addEventListener("click", function () {
+        button.classList.toggle("beautifyBitbucketReadmeBtnLoading");
+        handleBeautify();
+    });
 
     return button;
 }
