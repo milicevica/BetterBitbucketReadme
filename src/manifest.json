@@ -1,0 +1,22 @@
+{
+  "name": "Better Bitbucket README",
+  "description": "Enhance Bitbucket README.md preview",
+  "version": "0.1.0",
+  "manifest_version": 3,
+  "icons": {},
+  "content_scripts": [{
+    "matches": [],
+    "js": []
+  }],
+  "action": {
+    "default_popup": ""
+  },
+  "permissions": ["storage", "scripting"],
+  "host_permissions": ["https://bitbucket.org/*"],
+  "web_accessible_resources": [
+    {
+      "resources": [],
+      "matches": ["https://bitbucket.org/*"]
+    }
+  ]
+}
