@@ -1,0 +1,14 @@
+{
+  "name": "better-bitbucket-readme",
+  "version": "1.0.0",
+  "description": "A browser extension to enhance Bitbucket README.md preview.",
+  "main": "index.js",
+  "repository": "git@github.com:milicevica/BetterBitbucketReadme.git",
+  "keywords": ["Bitbucket", "Markdown", "README"],
+  "author": "Aleksandar Milicevic <aleksandar@milicevic.dev> (https://github.com/milicevica)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/milicevica/BetterBitbucketReadme/issues"
+  },
+  "homepage": "https://github.com/milicevica/BetterBitbucketReadme"
+}
