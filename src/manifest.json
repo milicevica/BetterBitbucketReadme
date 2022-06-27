@@ -15,7 +15,7 @@
   "host_permissions": ["https://bitbucket.org/*"],
   "web_accessible_resources": [
     {
-      "resources": [],
+      "resources": ["plugins/*", "lib/*"],
       "matches": ["https://bitbucket.org/*"]
     }
   ]
